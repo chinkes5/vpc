@@ -4,7 +4,7 @@ resource "aws_route_table" "privateroutetable" {
     name = "privateroutetable"
   }
 }
-resource "aws_route_table_association" "privatesubetroutetableassociation" {
+resource "aws_route_table_association" "privatesubnetroutetableassociation" {
   route_table_id = aws_route_table.privateroutetable.id
   subnet_id      = aws_subnet.privatesubnet.id
 }

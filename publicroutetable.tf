@@ -4,7 +4,7 @@ resource "aws_route_table" "publicroutetable" {
     name = "publicroutetable"
   }
 }
-resource "aws_route_table_association" "publicsubetroutetableassociation" {
+resource "aws_route_table_association" "publicsubnetroutetableassociation" {
   route_table_id = aws_route_table.publicroutetable.id
   subnet_id      = aws_subnet.publicsubnet.id
 }
